@@ -1,0 +1,17 @@
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  background: url(giphy.gif);
+  background-size: contain;
+  background-position: top left;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50mm;
+  font-weight: bold;
+  font-family: sans-serif;
+}

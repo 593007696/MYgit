@@ -1,0 +1,37 @@
+.btn {
+	display: block;
+
+	width: 280px;
+	height: 60px;
+	border: none;
+	background-color: #70a9c5;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	transition: .3s linear;
+	margin: auto;
+	font-family: "";
+
+}
+
+.btn1:hover {
+	transform: rotateX(15deg);
+	box-shadow: 0 15px 15px rgba(89, 195, 255, 0.58);
+}
+
+.btn2:hover {
+	transform: rotateX(-15deg);
+	box-shadow: 0 -15px 15px rgba(89, 195, 255, 0.58);
+}
+
+.btn3:hover {
+	transform: rotateY(15deg);
+	box-shadow: -15px 0 15px rgba(89, 195, 255, 0.58);
+}
+
+.btn4:hover {
+	transform: rotateY(-15deg);
+	box-shadow: 15px 0 15px rgba(89, 195, 255, 0.58);
+}

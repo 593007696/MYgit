@@ -1,0 +1,284 @@
+html {
+	background-color: #e6e6e6;
+}
+
+
+h1 {
+	position: absolute;
+	right: 40%;
+	left: 40%;
+	top: 0%;
+
+}
+
+h2{
+
+    margin: 20px 35% 0px;
+}
+
+
+/*    a {
+
+	text-decoration: none; 
+
+}
+*/
+
+button {
+	cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	font-size: 14px;
+	border-top: 9px solid #b9a383;
+	background-color: #005bac;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+
+	position: relative;
+	bottom: 0%;
+
+
+
+}
+
+
+.box {
+	border-right: 3px solid #999999;
+	border-bottom: 3px solid #999999;
+	color: #000000;
+	margin-top: 30px;
+	padding: 10px;
+	padding-top: 25px;
+	background: #ffffff;
+	background-color: #ffffff;
+	text-align: center;
+	max-width: 240px;
+	/*大きさ固定*/
+	min-width: 240px;
+	height: 180px;
+	margin: auto;
+	width: 10%;
+
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.button {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #5A4785;
+    padding: 5px 20px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+   
+    font-size: 15px;
+}
+.button2 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;   
+    background-color: #67B5B7; 
+   /* padding: 5px 20px;    */
+    width: 100px;
+    height: 23px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.button3 {
+    font-weight: lighter;
+    text-align: left;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+    background-color: #f8f8e2;
+    padding: 5px 20px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+
+    font-size: 15px;
+}
+.button4 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+      color: #FFFFFF;   
+    background-color: #67B5B7; 
+    padding: 5px 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.button5 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #F04B4B;
+    padding: 5px 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    cursor: pointer;  
+    
+}
+.button6 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #B96EAF;
+    padding: 0;
+    width: 50px;
+    height: 23px;
+    cursor: pointer;
+   
+    font-size: 13px;
+}
+
+
+
+.foot {
+	width: 100%;
+	font-size: 14px;
+	border-top: 9px solid #b9a383;
+	background-color: #005bac;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+
+	position: absolute;
+	bottom: 0%;
+
+}
+
+#search{
+
+    margin-bottom: 10px;
+
+}
+
+.scroll {
+
+
+	width: 100%;
+	overflow: auto;
+
+}
+
+.big {
+	font-size: 200%;
+}
+
+.small {
+	font-size: 10%
+}
+
+.sheet {
+	/*	text-align: center;	*/
+
+	margin: 45px 0;
+
+}
+
+.sheet span {
+	font-family: "";
+	font-size: 16px;
+	margin-right: 10px auto;
+	line-height: 30px;
+	
+}
+
+#button {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #5A4785;
+    padding: 5px 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    
+    font-size: 10px;
+}
+
+#button2 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #67B5B7;
+    padding: 5px 5px;
+    width: 40%;
+    height: 30px;
+    cursor: pointer;
+   
+    font-size: 10px;
+  
+}
+
+#button3 {
+    font-weight: lighter;
+    text-align: left;    
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #67B5B7;
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+  
+    font-size: 10px;
+  
+}
+
+
+
+#button4 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color:  #67B5B7;
+    padding: 5px 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    
+    font-size: 10px;
+}
+
+#button5 {
+    font-weight: lighter;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #F04B4B;
+    padding: 5px 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;  
+    font-size: 10px;
+}

@@ -1,0 +1,79 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    input {
+        outline: none;
+    }
+    [v-cloak]{
+        display: none;
+    }
+    #sudo {
+        position: relative;
+        height: 100%;
+    }
+    .btnbox {
+        padding-top: 48px;
+        text-align: center;
+    }
+    .tableList {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .item {
+        float: left;
+        width: 50%;
+    }
+    .table {
+        display: inline-block;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+    }
+    .table ul {
+        display: flex;
+        width: 20rem;
+        height: 2.5rem;
+        box-sizing: border-box;
+    }
+    .table ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border-right: 1px dashed #cccccc;
+        border-bottom: 1px dashed #cccccc;
+        box-sizing: border-box;
+    }
+    .table ul:nth-child(3) li,.table ul:nth-child(6) li {
+        border-bottom: 1px solid #000000;
+    }
+    .table ul:nth-child(9) li {
+        border-bottom: none;
+    }
+    .table ul li:nth-child(9) {
+        border-right: none;
+    }
+    .table ul li:nth-child(3),.table ul li:nth-child(6) {
+        border-right: 1px solid #000000;
+    }
+    .table ul li span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #0051dd;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .table ul li input {
+        border: none;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color: #cc00ff;
+        font-size: 20px;
+    }
