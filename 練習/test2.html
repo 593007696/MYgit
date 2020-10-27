@@ -22,7 +22,7 @@
             if (x.innerHTML.match(/\d+/g)) {
                 x.innerHTML = Number(x.innerHTML) + 1; // 改变内容; // 改变内容
             }
-            if (x.innerHTML == 11) {//123
+            if (x.innerHTML == 11) {
                 x.innerHTML = 1;
             }
 
@@ -79,9 +79,15 @@
                 lname: "Gates",
                 age: 56
             };
-            for (key in person) {
-                val = val + key + ":" + person[key] + "<br>";
+            list: {
+
+                for (key in person) {
+                    val = val + key + ":" + person[key] + "<br>";
+                    break list;
+                }
+
             }
+
             document.getElementById("demo").innerHTML = val;
         }
     </script>
