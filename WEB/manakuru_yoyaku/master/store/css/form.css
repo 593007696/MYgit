@@ -1,0 +1,21 @@
+.form ul li {
+    list-style: none;
+}
+
+.form label {
+    margin-right: 10px;
+    width: 100px;
+    float: left;
+}
+
+.form ul {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.form ul li:first-of-type{
+    margin-top: 40px;
+}
+.form ul li:last-of-type {
+    margin-bottom: 40px;
+}

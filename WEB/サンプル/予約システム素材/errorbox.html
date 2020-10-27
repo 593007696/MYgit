@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="errorbox.css" type="text/css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".errorbox").hide();
+
+            $("#bu").click(function () {
+                $(".errorbox").show();
+                $("#bu").hide();
+
+
+            });
+
+            $(".icon").click(function () {
+                $("#bu").show();
+                $(".errorbox").hide();
+
+            });
+        });
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <div class="errorbox">
+        <a href=""><i class="icon">&times;</i></a>
+        <strong>エラー</strong>
+        <ul>
+            <li>
+                111111111111111111111111
+
+            </li>
+            <li>
+                211111111111111111111
+            </li>
+        </ul>
+
+    </div>
+
+    <button id="bu">クリック</button>
+
+</body>
+
+</html>
