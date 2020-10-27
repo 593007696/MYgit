@@ -79,11 +79,12 @@
                 lname: "Gates",
                 age: 56
             };
-            list: {
+            list: { //标签
 
                 for (key in person) {
                     val = val + key + ":" + person[key] + "<br>";
-                    break list;
+                    break list; //跳出标签
+                    //for文只会执行一次
                 }
 
             }
@@ -92,7 +93,26 @@
         }
     </script>
 
+    <button onclick="check_array()">check_array</button>
+    <script>
+        function check_array() {
 
+            var fruits = ["Banana", "Orange", "Apple", "Mango"]; //配列
+            //fruits = 1;
+            document.getElementById("demo").innerHTML = isArray(fruits); //判断結界
+
+            function isArray(myArray) {
+
+                console.log(myArray.constructor);
+                console.log(myArray.constructor.toString().indexOf("Array") > -1)
+
+                var t_or_f = myArray.constructor.toString().indexOf("Array") > -1;
+                //変数の構造関数戻って文字列変換”Array”存在するかどうかチェック
+                var keeka = t_or_f == true ? "配列です" : "配列ではない";
+                return keeka
+            }
+        }
+    </script>
 
     <p id="demo"></p>
 
