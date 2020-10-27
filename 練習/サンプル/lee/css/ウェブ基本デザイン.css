@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Monotype Corsiva;
+  padding: 10px;
+
+}
+ 
+/* 头部标题 */
+.header {
+  padding: 30px;
+  /*枠内距離*/
+  text-align: center;
+  /*文字列配置*/
+  background: white;
+  /*背景色*/
+  background-image: url(../image/);
+  /*背景*/
+}
+ 
+.header h1 {
+  font-size: 50px;
+  /*文字大きさ*/
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  /*要素内容溢れるなら隠す*//*溢出隐藏*/
+  background-image: url(../image/);
+  background-size:100% 100%;
+  background-color: #888;
+  
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  /*配置*/
+  display: block;
+  /*文字ボタン一体化*/
+  color: #f2f2f2;
+  font-size: 30px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* リングアンダーライン削除*/
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
