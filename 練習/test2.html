@@ -114,6 +114,29 @@
         }
     </script>
 
+    <script>
+        var y = "5";
+        var x = -y;
+        var a = 1 - x;
+        var z = typeof a;
+
+        console.log(z);
+    </script>
+
+
+    <script>
+        function moji_change() {
+            var str = document.getElementById("demo").innerHTML;
+            //var txt = str.replace(/[\u4E00-\u9FA5]/g, "クリア");//漢字あれば漢字をクリアに置換
+            var txt = /[\u4E00-\u9FA5]/.test(str) ? "クリア" : str;//漢字あれば全部クリアに置換
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    <button onclick="moji_change()">moji_change</button>
+
+
+
     <p id="demo"></p>
 
 </body>
