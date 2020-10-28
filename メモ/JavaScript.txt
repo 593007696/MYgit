@@ -1,0 +1,23 @@
+console.log()
+console打印 JavaScript 值
+
+debugger;
+和断点同一作用
+
+JavaScript変数定義は変数使った後もできる
+しかしその変数初期化しなければならない
+初期化しないの場合関数undefinedとみなされる
+
+use strict
+(JavaScriptの最初若しくは関数の最初)
+厳しいモード
+
+変数は小数点の場合
+var x = 0.1;
+var y = 0.2;
+
+var z = x + y            // z = 0.30000000000000004
+if (z == 0.3)            //戻り値はfalse
+
+var z = (x * 10 + y * 10) / 10;       // z = 0.3
+if (z == 0.3)            //戻り値はture
