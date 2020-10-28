@@ -1,0 +1,84 @@
+----------------------------------------------------------------
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+			<meta charset="utf-8"> 
+			<title></title> 
+		
+		</head>
+		
+			<body>
+			
+				
+			</body>
+
+	</html>
+----------------------------------------------------------------
+PHP
+現地時間表示、
+ini_set('date.timezone','Asia/Tokyo');
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+../ 一個上のファイル
+
+場所　action
+post
+Get
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+<script src="AAA.js"></script>　ｊｓを外部から読み込み
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+	①新規登録
+	　　⇩
+	　　⇩
+	　　⇩
+	②表示　⇨⇨⇨　④削除
+	　　⇩
+	　　⇩
+	　　⇩
+	　③更新
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+MySQL 插入数据
+INSERT INTO table_name ( field1, field2,...fieldN )
+                       VALUES
+                       ( value1, value2,...valueN );
+MySQL 查询数据
+SELECT column_name,column_name
+FROM table_name
+
+データ結合
+	内部結合
+		SELECT A.a, A.b, B.c
+		FROM A 
+		INNER JOIN B
+		ON A.a = B.a;
+	同じく
+		SELECT A.a,A.b,B.c
+		FROM A , B 
+		WHERE A.a = B.b
+
+	結合した後取出す
+
+		WHERE A.a = '1'
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+MｙSQLデータ型
+CHAR
+固定長文字列
+範囲は 0 から 255
+＊格納時に必ず指定された長さになるように右側がスペースで埋められる。
+
+VARCHAR
+可変長文字列
+範囲は 0 から 65,535 。
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+MｙSQL主キー
+
+Not　NULL
+
+DROP TABLE テーブル名　⇨テーブル削除
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
