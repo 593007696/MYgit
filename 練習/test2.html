@@ -184,6 +184,193 @@
 
     <p id="demo"></p>
 
+
+    <script>
+        //メール有効性評価
+        function validateForm() {
+            var x = document.forms["myForm"]["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                alert("不是一个有效的 e-mail 地址");
+                return false;
+            }
+        }
+    </script>
+
+
+    <form name="myForm" action="" onsubmit="return validateForm();" method="post">
+        Email: <input type="text" name="email">
+        <input type="submit" value="GO">
+    </form>
+
+
+
+    <script>
+        function check_num() {
+            var inpObj = document.getElementById("id1");
+            if (inpObj.checkValidity() == false) { //checkValidity inputの値チェック
+                document.getElementById("demo").innerHTML = inpObj.validationMessage; //エラーメッセージ
+            } else {
+                document.getElementById("demo").innerHTML = "人間";
+            }
+        }
+    </script>
+    <p>年齢</p>
+    <input id="id1" type="number" min="0" max="150" required>
+    <button onclick="check_num()">チェック</button>
+
+
+
+
+
+    <script>
+        function new_check() {
+            var txt = "";
+            var inpObj = document.getElementById("id2");
+            var validity_array = inpObj.validity;
+
+            //値が配列の中存在するかどうか
+            function inArray(values, array) {
+                for (var key in array) {
+                    if (array[key] == values) {
+                        return true;
+
+                    }
+                }
+                return false;
+            }
+
+            //値のキーを取り出す
+            function getKey(values, array) {
+                for (var key in array) {
+                    if (array[key] == values) {
+                        return key;
+
+                    }
+                }
+                return null;
+            }
+            //キーの値取り出す
+            function getValue(key, array) {
+                var values;
+
+                values = array[key];
+                values = values === undefined ? null : values;
+                return values;
+            }
+
+
+            // 判断输入是否为数字
+            function isNumeric(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+                //parseFloat(n)文字列数字化
+                //isFinite(n)数字無限ではないかどうか
+            }
+
+            if (!isNumeric(inpObj.value)) { //isNumeric 数字判断
+                txt = "数字ではない";
+            } else if (inArray(true, validity_array)) { //validity　入力チェック
+
+                txt = getKey(true, validity_array) + "が正しくではない";
+
+            } else {
+                txt = "正しい";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+
+
+    <input id="id2" type="number" min="1" max="100" required>
+    <button onclick="new_check()">new_check</button>
+
+    <script>
+        function getKey(values, array) {
+            for (var key in array) {
+                if (array[key] == values) {
+                    return key;
+
+                }
+            }
+            return null;
+        }
+
+        function check_form() {
+            var getInp = document.getElementById("form").getElementsByTagName("input");
+            for (var i in getInp) {
+
+                if (i == "length") break;
+
+                Validity(getInp[i]);
+
+            }
+        }
+
+        //入力エラーチェック
+        function Validity(inpObj) {
+
+            var validity_array = inpObj.validity;
+
+            inpObj.setCustomValidity(''); //提示初期化
+
+
+            if (inpObj.checkValidity() == false) {
+
+                if (inpObj.value == "") {
+                    inpObj.setCustomValidity("入力してください!!!!!");
+                }
+
+                var inpError = getKey(true, validity_array);
+
+                switch (inpError) { //既存規則
+                    case "rangeUnderflow":
+                        inpObj.setCustomValidity("小さい");
+                        break;
+                    case "rangeOverflow":
+                        inpObj.setCustomValidity("大きい");
+                        break;
+
+                };
+
+            } else {
+
+                switch (inpObj.value) { //入力禁止規則
+                    case "111":
+                        inpObj.setCustomValidity("1!!!!!");
+                        break;
+                    case "222":
+                        inpObj.setCustomValidity("2!!!!!");
+                        break;
+
+                };
+
+                var rule1 = /^[0-9]{8}$/; //正規表現式定義
+
+                switch (inpObj.id) { //idで絞り込む
+                    case "1":
+                        rule1.test(inpObj.value) ? "" : inpObj.setCustomValidity("0-9"); //検証
+                        break;
+
+                };
+
+
+            }
+
+
+        }
+    </script>
+
+    <form id="form" action="" onsubmit="return confirm('確認しますか？');" method="post">
+        <input id="id99" type="number" min="100" max="300" required>
+        <input type="text" id="1" required>
+        <input type="time" id="2" required>
+        <input type="date" id="3" required>
+        <input type="submit" onclick="check_form()">
+    </form>
+
+
+
     <script>
         var a = 5; // 初始化 x
 
@@ -226,27 +413,16 @@
     <script>
         console.log('%d', 123);
         console.log("%c\%c表示css样式", 'color: red;font-size: 30px;font-weight: bold;text-decoration: underline;');
-      
+
         console.log("%c%s",
             "color: red; background: yellow;",
             "\
-             ┏━┓      ┏━┓\n\
-            ┏┛ ┻━━━━━━┛ ┻┓\n\
-            ┃            ┃\n\
-            ┃    ━━━     ┃\n\
-            ┃ ┳┛      ┗┳ ┃\n\
-            ┃            ┃\n\
-            ┃    ━┻━     ┃\n\
-            ┃            ┃\n\
-            ┗━┓        ┏━┛\n\
-              ┃        ┃ バグなし\n\
-              ┃        ┃ 順調リリース\n\
-              ┃        ┗━━━┓\n\
-              ┃            ┣┓\n\
-              ┃           ┏┛\n\
-              ┗┓ ┓ ┏━┳ ┓ ┏┛ \n\
-               ┃━┫━┫ ┃━┫━┫\n\
-               ┗ ┻ ┛ ┗ ┻ ┛\n"
+             ┏━┓      ┏━┓\n\            ┏┛ ┻━━━━━━┛ ┻┓\n\            ┃            ┃\n\
+            ┃    ━━━     ┃\n\            ┃ ┳┛      ┗┳ ┃\n\            ┃            ┃\n\
+            ┃    ━┻━     ┃\n\            ┃            ┃\n\            ┗━┓        ┏━┛\n\
+              ┃        ┃ バグなし\n\              ┃        ┃ 順調リリース\n\              ┃        ┗━━━┓\n\
+              ┃            ┣┓\n\              ┃           ┏┛\n\              ┗┓ ┓ ┏━┳ ┓ ┏┛ \n\
+               ┃━┫━┫ ┃━┫━┫\n\               ┗ ┻ ┛ ┗ ┻ ┛\n"
         );
 
         console.log("%c    ",
