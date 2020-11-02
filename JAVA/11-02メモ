@@ -14,3 +14,74 @@ gradle -version
 オブジェクト指向
 
 メソッド
+
+
+(1). プリミティブ型
+基本型とも呼ばれます。
+変数は値そのものを保持します。
+
+
+
+(2)参照型
+
+オブジェクト型
+String型など、クラスを型として持ちます。
+例) String str = "12345";
+
+配列型
+同じ種類の変数を複数まとめることができます。
+配列のサイズは初期化時に宣言する必要があります。
+例)Array=new int[10];
+
+列挙型
+列挙型とは、Javaの仕様で定められた、定数を集合として扱うリストをいいます。
+例) enum Color { RED, YELLOW, GREEN }
+
+制御構文
+1順次処理
+2分岐処理
+3繰り返し処理
+break:
+ループ中にbreak文が実行されると、
+現在のループ制御を終了します。
+continue:
+ループ中にcontinue文が実行されると、
+ループ内処理の先頭に制御が移ります。
+
+
+
+まとめ
+
+Java基本構造
+package フォルダー名
+import java.util.Scanner;　//import加载定义好的类或者包 
+//ここは入力メソッドScanner使用する為、
+public class ファイル名{
+
+     public static void main(String[] args) {
+         //public どんな場合にも引用できる
+         //static 静態
+         //void 戻り値なし
+         //String[] args　貰った変数入れる為、
+         System.out.print("数字：");//出力
+         Scanner sc = new Scanner(System.in);//変数scはScanner型
+         //System.in標準入力
+         long l = sc.nextLong();//next()読み取り
+         long n = l;
+         sc.close();//Scanner閉める
+         int count = 0;
+        while (n > 8) {
+            n /= 9;
+            count++;
+        }
+        System.out.println(l + "能被" + count + "个9整除。");
+
+
+     }
+
+}
+
+
+
+
+
