@@ -1,0 +1,16 @@
+9時
+
+****************gradleインストール**********
+set GRADLE_HOME=C:\gradle-5.1   //その時のファイルのバージョン
+
+set PATH=%GRADLE_HOME%\bin;%PATH%
+
+gradle -version
+**********************************
+
+
+13時
+
+オブジェクト指向
+
+メソッド

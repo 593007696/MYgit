@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "MYgit_663e1a85"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimitiveTypeTest",
+            "request": "launch",
+            "mainClass": "PrimitiveTypeTest",
+            "projectName": "MYgit_663e1a85"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Puppy",
+            "request": "launch",
+            "mainClass": "Puppy",
+            "projectName": "MYgit_663e1a85"
+        },
+        {
             "name": "Listen for XDebug",
             "type": "php",
             "request": "launch",
