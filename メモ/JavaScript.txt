@@ -1,8 +1,8 @@
 console.log()
-console打印 JavaScript 值
+console JavaScript 值を印刷
 
 debugger;
-和断点同一作用
+ブレークポイントと一緒
 
 JavaScript変数定義は変数使った後もできる
 しかしその変数初期化しなければならない
@@ -29,4 +29,85 @@ if (typeof myObj !== "undefined" && myObj !== null)
 undefinedは変数定義なし
 NULLは変数値なし
 
-zhang 
+JavaScriptで配列は数字キーしか持ってません(array)
+var cars=new Array();
+cars[0]="Saab";
+cars[1]="Volvo";
+cars[2]="BMW";
+
+オブジェクトは”文字キー”を持ってるの”配列”、所謂”関連配列”(object)
+var person={
+firstname : "John",
+lastname  : "Doe",
+id        :  5566
+};
+
+javascript：
+ 
+var a=[1,2,3,4];
+ 
+a['foo']=’Hello World’;
+ 
+alert(a.length);//4
+
+< ? php
+ 
+$a=array(1,2,3,4);
+ 
+$a["foo"]=”Hello world”;
+ 
+echo count($a);//5
+ 
+? >
+
+
+JavaScript中のconst,var,let
+1.constの変数変更不可、初期化が必要
+
+const b = 2;//正しい
+const b;//間違い、初期化が必要
+
+2.var 定義の変数変更可能、初期化しなくても大丈夫(undefined)
+var a = 1;
+var a;//エラーではない
+
+3.letはブロック内作用、関数内let定義後、関数外影響なし
+let c = 3;
+
+function change(){
+let c = 6;
+console.log(c);//6
+}
+change();
+console.log(c);//3
+
+
+javascript:void(0)//無限循環　
+
+javascript:void(document.form.submit())//submit
+
+href="#"//標記
+
+new Promise(function (resolve, reject) {//resolve 代表一切正常，reject 是出现异常时所调用的
+    var a = 0;
+    var b = 1;
+    if (b == 0) reject("Diveide zero");
+    else resolve(a / b);
+}).then(function (value) {//resolveの時に
+    console.log("a / b = " + value);
+}).catch(function (err) {//rejectの時に
+    console.log(err);
+}).finally(function () {//関わらず実行
+    console.log("End");
+});
+
+ try {
+        if(x == "") throw "is Empty";//自定义错误信息
+        if(isNaN(x)) throw "not a number";
+        if(x > 10) throw "too high";
+        if(x < 5) throw "too low";
+    }
+    catch(err) {//获得错误信息
+        message.innerHTML = "Input " + err;
+    }
+
