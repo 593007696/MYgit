@@ -1,0 +1,147 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Suuate",
+            "request": "launch",
+            "mainClass": "javasample.Suuate",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HashMapTest",
+            "request": "launch",
+            "mainClass": "javasample.HashMapTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayListTest",
+            "request": "launch",
+            "mainClass": "javasample.ArrayListTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringTest",
+            "request": "launch",
+            "mainClass": "javasample.StringTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VectorTest",
+            "request": "launch",
+            "mainClass": "javasample.VectorTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileWriteTest",
+            "request": "launch",
+            "mainClass": "javasample.FileWriteTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileReadTest",
+            "request": "launch",
+            "mainClass": "javasample.FileReadTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringBuilderSpeedTest",
+            "request": "launch",
+            "mainClass": "javasample.StringBuilderSpeedTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringBuilderTest",
+            "request": "launch",
+            "mainClass": "javasample.StringBuilderTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringTest",
+            "request": "launch",
+            "mainClass": "StringTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SortSample",
+            "request": "launch",
+            "mainClass": "javasample.SortSample",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<app>",
+            "request": "launch",
+            "mainClass": "javasample.App",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App2<app>",
+            "request": "launch",
+            "mainClass": "javasample.App2",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FizzBuzz<app>",
+            "request": "launch",
+            "mainClass": "javasample.FizzBuzz",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IFSample<app>",
+            "request": "launch",
+            "mainClass": "javasample.IFSample",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OverFlowTest<app>",
+            "request": "launch",
+            "mainClass": "javasample.OverFlowTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchSample<app>",
+            "request": "launch",
+            "mainClass": "javasample.SwitchSample",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Warikire<app>",
+            "request": "launch",
+            "mainClass": "javasample.Warikire",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WhileSample<app>",
+            "request": "launch",
+            "mainClass": "javasample.WhileSample",
+            "projectName": "app"
+        }
+    ]
+}

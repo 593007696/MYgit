@@ -7,5 +7,14 @@ public class App2 {
         String string = sc.next();
         sc.close();
         System.out.println("Hello " + string + "!");
+        int a = 10;
+        int b = a++;
+        int c = +a;
+        int d = a++;
+        int e = a;
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
     }
 }

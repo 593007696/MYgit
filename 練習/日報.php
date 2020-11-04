@@ -42,5 +42,6 @@ body;
 
 <a href="mailto:<?= $mail ?>?subject=<?= $title ?>&body=<?= $body ?>" target="_top">
     <button id="btn">
+        閉じる
     </button>
 </a>
