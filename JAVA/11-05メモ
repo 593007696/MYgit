@@ -1,0 +1,8 @@
+throws Exception
+入力必要の場合追加,エラー投げる為
+
+ int[] array = { 1, 2, 3 };
+        for (int val : array) {
+            System.out.println(val);
+        }
+遍历

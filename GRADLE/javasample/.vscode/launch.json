@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UseRobot",
+            "request": "launch",
+            "mainClass": "javasample.UseRobot",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaTest",
+            "request": "launch",
+            "mainClass": "javasample.JavaTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DoubleForTest",
+            "request": "launch",
+            "mainClass": "javasample.DoubleForTest",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Suuate",
             "request": "launch",
             "mainClass": "javasample.Suuate",
