@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UseStaticVariable",
+            "request": "launch",
+            "mainClass": "javasample.UseStaticVariable",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RiLi",
+            "request": "launch",
+            "mainClass": "javasample.RiLi",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UseConstructor",
+            "request": "launch",
+            "mainClass": "javasample.UseConstructor",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UseRobot",
             "request": "launch",
             "mainClass": "javasample.UseRobot",
