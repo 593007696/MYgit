@@ -1,0 +1,15 @@
+ファイル名先頭大文字
+ extends 継承
+ super 親クラスから呼び出し
+ throw new IllegalAccessException
+
+修飾子							説明																														
+public							どのクラスからもアクセス可能できます。																														
+protected						同一パッケージ内のクラス、または継承先のクラスからアクセスできます。																														
+private							自分自身のクラスのみアクセスできる																														
+未定義							同一パッケージ内のクラスからアクセスできます。
+@ 注釈																														
+
+
+implements 连接接口
+

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PersonMain2",
+            "request": "launch",
+            "mainClass": "data.PersonMain2",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EmployeeMain",
+            "request": "launch",
+            "mainClass": "javasample.EmployeeMain",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PersonMain",
+            "request": "launch",
+            "mainClass": "javasample.PersonMain",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UseStaticVariable",
             "request": "launch",
             "mainClass": "javasample.UseStaticVariable",
