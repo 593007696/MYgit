@@ -1,0 +1,33 @@
+/* 实例化对象 */
+Object referenceVariable = new Constructor();
+/* 访问类中的变量 */
+referenceVariable.variableName;
+/* 访问类中的方法 */
+referenceVariable.methodName();
+
+final 変数型　名前　＝　定数；
+
+X.compareTo(Y)
+如果指定的数与参数相等返回0。
+
+如果指定的数小于参数返回 -1。
+
+如果指定的数大于参数返回 1。
+
+equals()
+参数类型与数值都相等返回 True，否则返回 False。
+
+\t	在文中该处插入一个tab键
+\b	在文中该处插入一个后退键
+\n	在文中该处换行
+\r	在文中该处插入回车
+\f	在文中该处插入换页符
+\'	在文中该处插入单引号
+\"	在文中该处插入双引号
+\\	在文中该处插入反斜杠
+
+
+for(type element: array)
+{
+    System.out.println(element);
+}

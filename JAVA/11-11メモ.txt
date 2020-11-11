@@ -1,0 +1,9 @@
+try文の書き方の違い
+　try(br)
+　　close文なしで行ける
+
+文字型比較（参照型）
+String　A="aaa"
+String　B= new String("aaa");
+    A==br ×
+    A.equals(B) 〇
