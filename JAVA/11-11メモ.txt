@@ -7,3 +7,26 @@ String　A="aaa"
 String　B= new String("aaa");
     A==br ×
     A.equals(B) 〇
+
+時間の運算は
+Date x = new Date();
+Date y = new Date();
+long n = (y.getTime() - x.getTime()) / 1000;//単位は秒
+
+ Thread.sleep(5000); // 休眠
+ ｎ * 24 * 60 * 60 * 1000//ｎ日
+
+
+getInstanceとnew
+
+メインメソッド不変固定
+
+
+オーバーライド
+同じNAMEのメソッド引数型が違い
+
+
+
+
+ 
+

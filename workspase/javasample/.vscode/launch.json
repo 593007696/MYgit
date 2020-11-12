@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestPassByValue",
+            "request": "launch",
+            "mainClass": "drill.TestPassByValue",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - estPassByValue",
+            "request": "launch",
+            "mainClass": "drill.estPassByValue",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RegexExample",
+            "request": "launch",
+            "mainClass": "drill.RegexExample",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateDemo",
+            "request": "launch",
+            "mainClass": "drill.DateDemo",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Puppy",
+            "request": "launch",
+            "mainClass": "drill.Puppy",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PersonMain2",
             "request": "launch",
             "mainClass": "data.PersonMain2",

@@ -34,7 +34,50 @@ public class DateDemo {
         // d的使用，日（二位，不够补零）
         System.out.printf("两位数字的日（不足两位前面补0）：%td%n", date);
         // e的使用，日（一位不补零）
-        System.out.printf("月份的日（前面不补0）：%te", date);
+        System.out.printf("月份的日（前面不补0）：%te%n", date);
+
+        try {
+            Date x = new Date();
+            System.out.println(x + "\n");
+            long start = System.currentTimeMillis();
+
+            Thread.sleep(2000); // 休眠
+
+            Date y = new Date();
+            System.out.println(y + "\n");
+            long end = System.currentTimeMillis();
+
+            long n = (y.getTime() - x.getTime()) / 1000;
+            long diff = end - start;
+
+            System.out.println(n + "秒休眠");
+            System.out.println("Difference is : " + diff);
+
+        } catch (Exception e) {
+            System.out.println("Got an exception!");
+        }
+
+        Calendar c1 = Calendar.getInstance();
+        c1.set(2020, 10, 8);//手動日付設定
+        // 获得年份
+        int year = c1.get(Calendar.YEAR);
+        // 获得月份
+        int month = c1.get(Calendar.MONTH) + 1;
+        // 获得日期
+        int date1 = c1.get(Calendar.DATE);
+        // 获得小时
+        int hour = c1.get(Calendar.HOUR_OF_DAY);
+        // 获得分钟
+        int minute = c1.get(Calendar.MINUTE);
+        // 获得秒
+        int second = c1.get(Calendar.SECOND);
+        // 获得星期几（注意（这个与Date类是不同的）：1代表星期日、2代表星期1、3代表星期二，以此类推）
+        int dayNum = c1.get(Calendar.DAY_OF_WEEK) - 1;
+
+        String[] week = { "日", "月", "火", "水", "木", "金", "土" };
+        String day = week[dayNum];
+
+        System.out.println(year + "-" + month + "-" + date1 + "-" + hour + "-" + minute + "-" + second + "-" + day);
 
     }
 
