@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RiLi",
+            "request": "launch",
+            "mainClass": "javasample.RiLi",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App2",
+            "request": "launch",
+            "mainClass": "javasample.App2",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "javasample.App",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "App",
