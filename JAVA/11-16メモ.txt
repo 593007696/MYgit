@@ -1,0 +1,47 @@
+webServlet 
+リクエストURL紐づく
+
+extends
+继承
+
+implements
+实现接口
+
+interface
+接口
+
+读取了整数后，接着读取字符串
+应该连续执行两次nextLine()
+
+
+指定范围内黄金比例计算
+ public static void main(String[] args) {
+
+        double c = 0.618;
+        double d;
+        double e = 1;
+        String f = "", g = "";
+        for (double a = 1; a <= 20; a++) {
+            for (double b = 1; b <= 20; b++) {
+                if (a % 2 == 0 && b % 2 == 0)
+                    continue;
+                d = a / b;
+                if (Math.abs(d - c) < e) {
+                    e = Math.abs(d - c);
+                    f = String.valueOf(a);
+                    g = String.valueOf(b);
+                }
+
+            }
+
+        }
+
+        System.out.println(f + " " + g);
+    }
+
+
+要求されたリソース [/websample/] は利用できません。
+リジンサーバーは、ターゲットリソースの現在の表現を見つけられなかったか、
+またはそれが存在することを開示するつもりはありません。
+
+<% javaコード　%>

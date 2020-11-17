@@ -1,0 +1,19 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+　JSPのcontentTypeを指定する
+
+<%@ include file="include.jsp" %>
+    他のファイルを呼び出す
+
+任何文本、HTML标签、JSP元素必须写在脚本程序的外面。
+
+
+指令	          描述
+<%@ page ... %>	定义页面的依赖属性，比如脚本语言、error页面、缓存需求等等
+<%@ include ... %>	包含其他文件
+<%@ taglib ... %>	引入标签库的定义，可以是自定义标签
+
+
+includeする際に、contentType二つ存在するとコンパイラエラーが提示する為、
+片方のcontentType削除する
+
+インスタンス変数とは「インスタンス毎に別々の値を保持することのできる変数」
