@@ -1,0 +1,42 @@
+System.arraycopy(src, srcPos, dest, destPos, length)
+
+src: 源数组
+srcPos: 从源数组复制数据的起始位置
+dest: 目标数组
+destPos: 复制到目标数组的起始位置
+length: 复制的长度
+
+
+
+1、不带参数的nextInt()会生成所有有效的整数（包含正数，负数，0）
+
+2、带参的nextInt(int x)则会生成一个范围在0~x（不包含X）内的任意正整数
+
+　　例如：int x=new Random.nextInt(100); 
+
+　　　　则x为一个0~99的任意整数
+
+copyOfRange(int[] original, int from, int to)
+        // 第一个参数表示源数组
+        // 第二个参数表示开始位置(取得到)
+        // 第三个参数表示结束位置(取不到)
+        int[] b = Arrays.copyOfRange(a, 0, 3);
+
+把一个数组，转换为字符串
+         int a[] = new int[] { 18, 62, 68, 82, 65, 9 };
+        String content = Arrays.toString(a);
+        System.out.println(content);
+排序功能
+Arrays.sort(a);
+
+
+查询元素出现的位置
+Arrays.binarySearch(a, 62)
+1、如果找到关键字，则返回值为关键字在数组中的位置索引，
+且索引从0开始
+2、如果没有找到关键字，返回值为负的插入点值，
+所谓插入点值就是第一个比关键字大的元素在数组中的位置索引
+而且这个位置索引从1开始。
+
+比较两个数组的内容是否一样
+Arrays.equals(a, b)

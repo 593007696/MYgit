@@ -1,0 +1,143 @@
+数组是一个固定长度的，包含了相同类型数据的 容器
+
+
+  1 package com.zlh;
+  2 
+  3 import java.util.ArrayList;
+  4 import java.util.HashMap;
+  5 import java.util.Iterator;
+  6 import java.util.Map;
+  7 import java.util.Map.Entry;
+  8 import java.util.Set;
+  9 
+ 10 public class TravelseDemo {
+ 11 
+ 12     public static void main(String[] args) {
+ 13         // 数组遍历
+ 14         System.out.println("1 数组遍历");
+ 15         String[] str1 = { "数", "组", "遍", "历" };
+ 16         arrayTravelse(str1);
+ 17         System.out.println("===================");
+ 18         // 字符串遍历
+ 19         System.out.println("2 字符串遍历");
+ 20         String str2 = "字符串遍历";
+ 21         stringTravelse(str2);
+ 22         System.out.println("===================");
+ 23         // list遍历
+ 24         ArrayList<String> list = new ArrayList<String>();
+ 25         list.add("集");
+ 26         list.add("合");
+ 27         list.add("遍");
+ 28         list.add("历");
+ 29         // list遍历-for-each
+ 30         System.out.println("3 list遍历-for-each");
+ 31         forTravelse(list);
+ 32         System.out.println("===================");
+ 33         // list遍历-迭代器
+ 34         System.out.println("4 list遍历-迭代器");
+ 35         iteratorTravelse(list);
+ 36         System.out.println("===================");
+ 37         // map遍历
+ 38         Map<String, Integer> map = new HashMap<String, Integer>();
+ 39         map.put("jack", 1);
+ 40         map.put("tom", 2);
+ 41         map.put("jerry", 3);
+ 42         // map遍历-for-each与keySet
+ 43         System.out.println("5 map遍历-for-each与keySet");
+ 44         forKeySetTravelse(map);
+ 45         System.out.println("===================");
+ 46         // map遍历-迭代器与keySet
+ 47         System.out.println("6 map遍历-迭代器与keySet");
+ 48         iteratorKeySetTravelse(map);
+ 49         System.out.println("===================");
+ 50         // map遍历-for-each与entry
+ 51         System.out.println("7 map遍历-for-each与entry");
+ 52         forEntryTravelse(map);
+ 53         System.out.println("===================");
+ 54         // map遍历-迭代器与entry
+ 55         System.out.println("8 map遍历-迭代器与entry");
+ 56         iteratorEntryTravelse(map);
+ 57     }
+ 58 
+ 59     // 数组遍历
+ 60     private static void arrayTravelse(String[] str) {
+ 61         for (int i = 0; i < str.length; i++) {
+ 62             String j = str[i];
+ 63             System.out.print(j + " ");
+ 64         }
+ 65         System.out.println();
+ 66     }
+ 67 
+ 68     // 字符串遍历
+ 69     private static void stringTravelse(String str) {
+ 70         for (int i = 0; i < str.length(); i++) {
+ 71             char c = str.charAt(i);
+ 72             System.out.print(c + " ");
+ 73         }
+ 74         System.out.println();
+ 75     }
+ 76 
+ 77     // for-each循环遍历
+ 78     private static void forTravelse(ArrayList<String> list) {
+ 79         for (String str : list) {
+ 80             System.out.print(str + " ");
+ 81         }
+ 82         System.out.println();
+ 83     }
+ 84 
+ 85     // 迭代器遍历
+ 86     private static void iteratorTravelse(ArrayList<String> list) {
+ 87         Iterator<String> it = list.iterator();
+ 88         while (it.hasNext()) {
+ 89             String next = it.next();
+ 90             System.out.print(next + " ");
+ 91         }
+ 92         System.out.println();
+ 93     }
+ 94 
+ 95     // map遍历-for-each与keySet
+ 96     private static void forKeySetTravelse(Map<String, Integer> map) {
+ 97         Set<String> set = map.keySet();
+ 98         for (String key : set) {
+ 99             Integer value = map.get(key);
+100             System.out.print(key + ":" + value + " ");
+101         }
+102         System.out.println();
+103     }
+104 
+105     // map遍历-迭代器与keySet
+106     private static void iteratorKeySetTravelse(Map<String, Integer> map) {
+107         Set<String> set = map.keySet();
+108         Iterator<String> it = set.iterator();
+109         while(it.hasNext()) {
+110             String key = it.next();
+111             Integer value = map.get(key);
+112             System.out.print(key + ":" + value + " ");
+113         }
+114         System.out.println();
+115     }
+116     
+117     // map遍历-for-each与entry
+118     private static void forEntryTravelse(Map<String, Integer> map) {
+119         Set<Entry<String, Integer>> set = map.entrySet();
+120         for (Map.Entry<String, Integer> entry : set) {
+121             String key = entry.getKey();
+122             Integer value = entry.getValue();
+123             System.out.print(key + ":" + value + " ");
+124         }
+125         System.out.println();
+126     }
+127 
+128     // map遍历-迭代器与entry
+129     private static void iteratorEntryTravelse(Map<String, Integer> map) {
+130         Set<Entry<String, Integer>> set = map.entrySet();
+131         Iterator<Entry<String, Integer>> it = set.iterator();
+132         while (it.hasNext()) {
+133             Entry<String, Integer> en = it.next();
+134             String key = en.getKey();
+135             Integer value = en.getValue();
+136             System.out.print(key + ":" + value + " ");
+137         }
+138         System.out.println();
+139     }
+140 }

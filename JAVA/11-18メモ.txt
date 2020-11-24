@@ -1,0 +1,12 @@
+grant all privileges on *.* to user@"%"identified by"password";
+データベース　ALL権限与える
+
+Class.forName("com.mysql.jdbc.Driver"); 
+プログラム内でJDBCドライバを使うための
+ロード処理を行っています。
+
+Connection conn = DriverManager.getConnection(url, user, password); 
+urlとユーザ名パスワードを指定して、DBへの接続を行います。また、接続からStatementオブジェクトを
+
+
+
