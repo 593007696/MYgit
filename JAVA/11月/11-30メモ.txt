@@ -1,0 +1,18 @@
+round 四舍五入
+random 0-1之间的随机浮点数（取不到1）
+(int)( Math.random()*10) 得到一个0-10之间的随机整数 （取不到10）
+sqrt 开方
+pow 次方
+Math.PI Π
+Math.E 自然常数
+
+数字后+d运算后结果自动提升为double型
+ double num1 = 1 + 1d / 5;
+        System.out.println(num1);//输出1.2
+        int num2    = 1 + 1 / 5;
+        System.out.println(num2);//输出1
+
+// %s表示字符串，%d表示数字,%n表示换行
+
+printf
+format 一样可以输出字符串

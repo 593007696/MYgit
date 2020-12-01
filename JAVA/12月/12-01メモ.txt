@@ -1,0 +1,24 @@
+1. 每当有一个字面值出现的时候，虚拟机就会创建一个字符串
+2. 调用String的构造方法创建一个字符串对象
+3. 通过+加号进行字符串拼接也会创建新的字符串对象
+
+String 被修饰为final,所以是不能被继承的
+
+ASCⅡ　
+数字　49~57
+大文字　65~90 
+小文字　97-122
+
+Math.random() 0~1之间的随机一个数字
+ public static char randChar() {// 返回一个随机的字符
+        return (char) ((int) Math.round(Math.random() * (126 - 33) + 33));
+    }
+
+    substring(3,5);
+    //截取从第3个开始的字符串 （基0）
+        //到5-1的位置的字符串
+
+//根据,进行分割，得到3个子字符串
+        String subSentences[] = sentence.split(",");
+
+

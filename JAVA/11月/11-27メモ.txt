@@ -1,0 +1,44 @@
+定义默认构造器，
+它调用父类结构
+
+
+所有的基本类型，都有对应的类类型
+
+ int i = 5;
+ 
+        //基本类型转换成封装类型
+        Integer it = new Integer(i);
+         
+        //封装类型转换成基本类型
+        int i2 = it.intValue();
+
+        //基本类型转换成封装类型
+        Integer it = new Integer(i);
+         
+        //自动转换就叫装箱
+        Integer it2 = i;
+
+        //封装类型转换成基本类型
+        int i2 = it.intValue();
+         
+        //自动转换就叫拆箱
+        int i3 = it;
+
+
+         //int的最大值
+        System.out.println(Integer.MAX_VALUE);
+        //int的最小值      
+        System.out.println(Integer.MIN_VALUE);
+
+
+        数字转字符串顶
+
+    方法1： 使用String类的静态方法valueOf
+    方法2： 先把基本类型装箱为对象，然后调用对象的toString
+
+    字符串转数字
+    调用Integer的静态方法parseInt
+
+
+
+
