@@ -1,0 +1,85 @@
+所有的流，无论是输入流还是输出流，使用完毕之后，
+都应该关闭。 如果不关闭，会产生对资源占用的浪费。 
+当量比较大的时候，会影响到业务的正常开展。
+
+
+
+finally {
+            // 在finally 里关闭流
+            if (null != fis)
+                try {
+ 
+                    fis.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+        }
+
+        //把流定义在try()里,try,
+        catch或者finally结束的时候，会自动关闭
+
+
+        import java.io.FileReader;
+        FileReader fr = new FileReader(f)
+        不用转byte直接读取
+
+        import java.io.FileWriter;
+        FileWriter fr = new FileWriter(f)
+        不用转byte直接写入
+
+
+
+
+        File类的常见方法（参考一位大牛的，不小心把链接关了）
+1.创建。
+boolean createNewFile(); //创建文件
+boolean mkdir();创建文件夹
+boolean mkdirs();创建多级文件夹。
+
+2.删除。
+boolean delete();
+void deleteOnExit();在程序退出时删除文件。
+
+3.判断。
+boolean canExcute(); 判断是否可执行
+boolean exists(); 文件事是否存在。
+isFile();文件
+isDirectory();文件夹
+isHidden();//java能得到文件中的隐藏文件但是对隐藏文件时不能访问的
+isAbsolute();//绝对路径即时不存在也能得到。
+4.获取信息。
+getName();
+getPath();
+getParent();
+
+4.三种文件创建方式：
+File file = new File("E:/...");//文件/文件夹路径对象
+File file = new File("..." ,""...);//父目录绝对路径 + 子目录名称
+File file = new File("...","...");//父目录File对象 + 子目录名称
+
+file.exists():判断文件/文件夹是否存在
+file.delete():删除文件/文件夹
+file.isDirectory():判读是否为目录
+file.isFile():判读是否为文件夹
+file.mkdir():创建文件夹(仅限一级目录)
+file.mkdirs():创建多及目录文件夹(包括但不限一级目录)
+file.createNewFile():创建文件
+file.getAbsolutePath():得到文件/文件夹的绝对路径
+file.getName():得到文件/文件夹的名字
+file.String():同样是得到文件/文件夹的绝对路径等于file.getAbsolutePath()
+file.getParent():得到父目录的绝对路径String 不可以调用可以调用mkdir()方法
+
+file.getParentFile()：得到父目录的绝对路径的返回值是File型可以调用mkdir()方法
+
+String[] gdir.list():得到目录的子目录\文件的名称(不是绝对路径)
+File[] dir.listFiles():得到目录的子目录\文件事是否存在。
+
+ISO-8859-1 ASCII 数字和西欧字母
+GBK GB2312 BIG5 中文
+UNICODE (统一码，万国码)
+
+ISO-8859-1 包含 ASCII
+GB2312 是简体中文，BIG5是繁体中文，GBK同时包含简体和繁体以及日文。
+UNICODE 包括了所有的文字，无论中文，英文，藏文，法文，世界所有的文字都包含其中
+

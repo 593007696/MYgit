@@ -1,0 +1,27 @@
+
+replace 不会报错
+replaceAll 替换所有的 正则表示
+replaceFirst 只替换第一个
+
+toLowerCase 全部变成小写
+toUpperCase 全部变成大写
+
+trim
+去掉首尾空格
+
+split
+根据分隔符进行分隔
+
+subString
+截取子字符串
+
+toCharArray()
+获取对应的字符数组
+
+charAt(int index)获取指定位置的字符
+
+使用equals进行字符串内容的比较，必须大小写一致
+equalsIgnoreCase，忽略大小写判断内容是否一致
+
+startsWith //以...开始
+endsWith //以...结束

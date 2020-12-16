@@ -1,0 +1,7 @@
+file f=new file("アドレス")//ファイル目標作成
+"判断是否存在：" + f.exists()
+"判断是否是文件夹：" + f.isDirectory()
+"判断是否是文件：" + f.isFile()
+"获取文件的长度：" + f.length()
+// 文件重命名
+  f.renameTo(f2);
