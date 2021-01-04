@@ -1,0 +1,15 @@
+いくつかのアーカイブを取得できません。apt-get update を実行するか --fix-missing オプションを付けて試してみてください。
+sudo /opt/pi4j/examples/build
+
+
+选择有很多一行一个关机方法。
+
+sudo shutdown -h now
+sudo halt
+sudo poweroff
+sudo init 0
+重启方法。
+
+sudo reboot
+shutdown -r now
+shutdown -r 18:23:52 #定时重启在18点23分52秒关闭

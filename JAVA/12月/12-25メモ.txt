@@ -1,0 +1,44 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+ 
+import pigpio
+import time
+
+#実体化
+pi = pigpio.pi()
+
+#set_servo_pulsewidth(user_gpio, pulsewidth)
+#user_gpio：= 0-31。
+#パルス幅：= 0（オフ）、500（最も反時計回り）-2500（最も時計回り）。
+
+#ここで-90
+pi.set_servo_pulsewidth(4, 500)
+time.sleep(1)
+#ここで0
+pi.set_servo_pulsewidth(4, 1450)
+time.sleep(1)
+#ここで90
+pi.set_servo_pulsewidth(4, 2350)
+time.sleep(1)
+
+str = input("自動モードスタート？:Y or N \n");
+
+if(str=="Y"):
+
+    n=500
+
+    while (1):
+        
+        pi.set_servo_pulsewidth(4, n)
+        time.sleep(1)
+        
+        n += 900
+        if (n > 2350):
+            n = 500
+ 
+
+
+Inter-Integrated Circuit     IIC集成电路总线
+
+
+TMP102是兼容SMBus和I2C串行总线的温度传感器。

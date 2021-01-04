@@ -1,0 +1,39 @@
+如下步骤可将执行 python 命令时运行的环境升级到 python3
+
+安装 python3
+
+sudo apt install python3
+
+卸载 python2.7 （可选）
+
+sudo apt remove python
+
+再执行如下命令自动清理 python2.7 的依赖
+sudo apt autoremove
+
+删除掉原先 python 的链接
+
+sudo rm /usr/bin/python
+
+创建一个新的链接指向刚刚安装的 python3.5
+
+sudo ln -s /usr/bin/python3.5 /usr/bin/python
+
+测试
+
+输入 python
+
+
+
+pigpioのインストール
+まずはpigpioをインストールしておきます。（動くようになりました！）
+
+sudo apt-get update
+sudo apt-get install pigpio
+
+sudo apt-get update
+sudo apt-get install pigpio
+デーモンの立ち上げ
+pigpioを使う前にはデーモンを立ち上げておく必要があるみたいです。よって、以下も実行しておきます。
+
+sudo pigpiod
